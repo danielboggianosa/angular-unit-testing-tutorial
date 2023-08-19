@@ -88,13 +88,13 @@ describe('AppComponent', () => {
 
   it('should retrieve other data on child event', fakeAsync(() => {
     const mockData = {
-      title: 'Mock Title 2',
+      title: 'Mock Title',
       message: 'Mock Message'
     };
     spyOn(service, 'obtenerOtrosDatos').and.returnValue(of(mockData)); // Mock the service method
 
     app.recieveChildEvent();
     tick(); // Simulate the passage of time until all asynchronous operations complete
-    expect(app.data.title).toEqual("Mock Title 2");
+    expect(app.data).toEqual(mockData);
   }));
 });
