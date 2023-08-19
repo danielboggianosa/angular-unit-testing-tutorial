@@ -3,7 +3,7 @@
   <span>{{ data.message }}</span>
 </div>
 
-<app-testing></app-testing>
+<app-testing (miEvento)="recieveChildEvent()"></app-testing>
 
 <button (click)="toggleOther()">Toggle Other component</button>
 

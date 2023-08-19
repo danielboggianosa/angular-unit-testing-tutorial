@@ -13,4 +13,8 @@ export class TestingService {
   obtenerDatos(): Observable<AppPageData> {
     return this.http.get<AppPageData>('assets/app-page.data.json');
   }
+
+  obtenerOtrosDatos(): Observable<AppPageData> {
+    return this.http.get<AppPageData>('assets/app-page-other.data.json');
+  }
 }

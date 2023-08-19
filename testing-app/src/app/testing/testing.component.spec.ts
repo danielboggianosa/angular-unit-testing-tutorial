@@ -18,4 +18,17 @@ describe('TestingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('debería emitir un evento al hacer clic en el botón', () => {
+    const fixture = TestBed.createComponent(TestingComponent);
+    const component = fixture.componentInstance;
+
+    const boton = fixture.nativeElement.querySelector('button');
+    spyOn(component.miEvento, 'emit');
+
+    boton.click();
+    fixture.detectChanges();
+
+    expect(component.miEvento.emit).toHaveBeenCalled();
+  });
 });

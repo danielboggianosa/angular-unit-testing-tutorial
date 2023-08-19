@@ -26,4 +26,10 @@ export class AppComponent implements OnInit {
     this.showOther = !this.showOther;
   }
 
+  recieveChildEvent(): void {
+    this.service.obtenerOtrosDatos().subscribe((data) => {
+      this.data = data;
+    });
+  }
+
 }

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-testing',
   templateUrl: './testing.component.html',
   styleUrls: ['./testing.component.scss']
 })
-export class TestingComponent {}
+export class TestingComponent {
+  @Output() miEvento = new EventEmitter();
+}
