@@ -6,7 +6,7 @@
 
 - **Karma:** Es un test runner que se utiliza para ejecutar las pruebas en diferentes navegadores y ambientes. Angular CLI utiliza Karma por defecto.
 
-## 2. **Preparación del Entorno:**
+## [2. **Preparación del Entorno:**](https://github.com/danielboggianosa/angular-unit-testing-tutorial/blob/main/2-preparacion-del-entorno.md)
 
 - Angular CLI (Command Line Interface) proporciona comandos útiles para crear componentes, servicios, directivas y otros elementos. Puedes usar `ng generate component`, `ng generate service`, etc., para generar automáticamente los archivos necesarios, incluidos los archivos de prueba.
 
